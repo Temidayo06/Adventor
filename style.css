@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500&family=Mansalva&family=Palanquin+Dark:wght@400;500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --blue:  hsla(194, 100%, 57%, 1);
+    --light: hsla(127, 66%, 96%, 1);
+    --white: #fff;
+    --gold:  hsla(39, 86%, 55%, 1);
+    --deep-cyan: hsla(126, 50%, 11%, 1);
+    --red: hsla(7, 86%, 55%, 1);
+    --grey: hsla(0, 0%, 43%, 1);
+
+} 
+
+/* Utilities */
+
+li {
+    list-style: none;
+}
+a {
+    font-family: 'Jost', sans-serif;
+    font-weight: 500;
+    font-size: 1.125rem;
+    text-decoration: none;
+    color: var(--light);
+    line-height: 1.5rem;
+}
+
+.slim {
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.688rem;
+}
+
+.text-secondary {
+    color: var(--grey);
+}
+.italics {
+    font-family: 'Mansalva', sans-serif;
+}
+.heading {
+    font-family: 'Palanquin Dark', sans-serif;
+    font-weight: 500;
+}
+h1 {
+    font-weight: 700;
+    font-size: 5.313rem;
+    color: var(--light);
+}
+
+span {
+    color: var(--red);
+}
+
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.grid-2 {
+    grid-template-columns: repeat(2,1fr);
+}
+
+.mt-3 {
+    margin-top: 1rem;
+}
+
+.my-4 {
+    margin-block: 1.5rem;
+}
+
+.py-3 {
+    padding-inline: 1rem;
+} 
+
+.btn {
+    background-color: var(--gold);
+    color: var(--light);
+    /* width: 8rem; */
+    font-size: 1.125rem;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.4rem 0.8rem;
+}
+
+.text-primary {
+    font-size: 1.575rem;
+    color: var(--blue);
+}
+
+.text-navy {
+    color: var(--deep-cyan);
+}
+
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+/* Navbar  */
+
+.navbar {
+    margin: 0 auto;
+    justify-content: space-between;
+    width: 100%;
+    padding: 3rem 3rem 1rem 2rem;
+}
+
+
+nav {
+ gap: 1rem;
+ justify-content: center;
+ align-items: center;
+}
+.navbar-links {
+    justify-content: space-between;
+    gap: 3rem;
+    color: var(--light);
+}
+.nav-btn {
+    padding: 1rem 3rem;
+    margin-inline: 6rem 1rem;
+}
+
+
+/* Hero */
+.hero-section {
+    background: url(./images/Rectangle\ 6.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+}
+
+.hero {
+    padding: 0.5rem 0.5rem;
+}
+
+.hero-p {
+    color: var(--light);
+    font-size: 2.5rem;
+}
+
+.hero-p1 {
+    color: var(--light);
+    padding-inline: 27.8rem;
+}
+
+.hero-btn {
+    margin-block: 2rem;
+    padding: 1rem 5rem;
+}
+
+/* Showcase */
+.showcase {
+    padding-block: 3rem 20rem;
+    text-align: center;
+    width: 100%;
+    background: url(./images/Rectangle\ 7.svg);
+    background-size: cover;
+}
+
+.showcase-ideas {
+    gap: 4rem;
+    padding-inline: 8rem;
+}
+.showcase .heading {
+    font-size: 3.125rem;
+}
+
+.ideas {
+    text-align: justify;
+}
+
+.ideas img.illustration {
+    width: 100%;
+}
+
+.rating {
+    justify-content: space-between;
+}
+.ideas .heading {
+    font-size: 1rem;
+}
+
+.ideas p.slim {
+    margin-block: 1rem;
+    font-size: 1rem;
+    padding-right: 1rem;
+    line-height: 1.875rem;
+    
+}
+
+.ideas-btn {
+    width: 100%;
+    margin-top: 0.5rem;
+    padding-block: 1rem;
+}
+
+/* tour cont */
+
+.tour-container {
+    
+    margin-left: 1rem;
+    padding: 6rem 2rem;
+    gap: 1.5rem;
+    position: relative;
+}
+
+.tour-text {
+    background-color: var(--white);
+    text-align: left;
+    padding: 1rem 0 3rem 2rem;
+    width: 30.563rem;
+    border-radius: 10px;
+    
+    
+}
+
+.tour-text .heading {
+/* padding-right: 30rem; */
+line-height: 1.5;
+}
+
+.tour-text p {
+    font-weight: 40;
+    font-size: 1.3rem;
+    padding-right: 2rem;
+    margin-top: 2rem;
+}
+
+.tour-img {
+    position: absolute;
+    right: 2rem;
+    top: 26rem;
+}
+
+.tour-img img {
+    width: 45rem;
+}
+
+/* testimonials */
+
+.testimonials {
+    position: relative;
+    text-align: center;
+    padding: 5rem;
+}
+
+.testimonials img {
+    margin-block: 2rem 0;
+}
+
+.testimonials h2 {
+    font-weight: 700;
+    font-size: 3.125rem;
+}
+
+.client-name {
+    font-size: 1.75rem;
+}
+
+.tourist {
+    font-size: 1.7rem;
+    margin-top: 1rem;
+}
+.remarks {
+    padding-inline: 27rem;
+    margin-block: 2rem;
+}
+
+.remarks::before {
+    content: url(./images/Vector.svg);
+    position: relative;
+    right: 10rem;
+    top: 3.5rem;
+}
+
+.remarks::after {
+    content: url(./images/akar-icons_arrow-up.svg);
+    position: absolute;
+    right: 24rem;
+    bottom: 22rem;
+
+}
+
+/* Footer */
+footer {
+    padding: 2rem 2rem;
+    background-color: var(--deep-cyan);
+    color: var(--white);
+}
+.footer-container {
+    grid-template-columns: repeat(3,1fr);
+    gap: 3rem;
+    padding-block: 1rem;
+    
+}
+
+.grid-2 {
+    /* margin-top: rem; */
+    line-height: 1.5;
+    font-size: 0.5rem;
+    
+}
+
+.grid-2 li {
+    margin-top: 0.5rem;
+}
+
+input {
+    margin-top: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--white);
+    padding: 1rem 16.5rem 1rem 0.5rem;
+    font-size: 0.9rem;
+}
+
+.socials {
+    margin-top: 1rem;
+    justify-content: end;
+    gap: 1.5rem;
+}
+
+.embed {
+    padding: 0.5rem 1.5rem;
+    position: relative;
+    bottom: 2.5rem;
+    left: 20rem;
+}
+
+.embed::after {
+    content: url(./images/Vector\ \(1\).svg);
+    position: absolute;
+    right: 0;
+    bottom: ;
+}
+
+
+
+.terms {
+    margin-right: 2rem;
+}
